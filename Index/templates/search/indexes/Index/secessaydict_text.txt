@@ -1,0 +1,4 @@
+{{ object.index_title }}
+{{ object.index_time }}
+{{ object.index_type }}
+{{ object.index_sharer }}

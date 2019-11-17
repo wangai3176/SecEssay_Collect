@@ -1,0 +1,46 @@
+{% load staticfiles %}
+<html>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <body>
+    <link rel="stylesheet" type="text/css" href="{% static './css/bootstrap4.min.css'%}">
+        <link rel="stylesheet" type="text/css" href="{% static './css/style.css'%}">
+        <section id="contact-area"  >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1"><!--start contact form-->
+                        <div class="contact-box text-center">
+                            <form id="ajax-contact" action="#" method="post"><div class="form-group row">
+                                {% csrf_token %}
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" id="id_index_title" name="index_title" placeholder="文章标题*" required>
+                                </div>
+                                <div class="col-lg-6">
+{#                                <input type="text" class="form-control" id="id_index_type" name="index_type" placeholder="文章类型*" required>#}
+                                    <select class="form-control" title="请选择" id="id_index_type" name="index_type"  required>
+                                    <option value="" disabled selected hidden>文章类型*</option>
+                                    <option value="Web漏洞">Web漏洞</option>
+                                    <option value="内网渗透">内网渗透</option>
+                                    <option value="渗透测试">渗透测试</option>
+                                    <option value="代码审计">代码审计</option>
+                                    <option value="Exploit">Exploit</option>
+                                    <option value="其它">其它</option>
+                                    </select>
+                                </div>
+                            </div>
+                                <br>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="id_index_url" name="index_url" placeholder="文章URL连接">
+                            </div>
+                            <button type="submit" onclick="window.location.href = '../'">返回</button>
+                            <button type="submit" style="margin-left:70px;">提 交</button>
+                            <div id="form-messages"></div>
+                        </form>
+                    </div><!--end contact form-->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

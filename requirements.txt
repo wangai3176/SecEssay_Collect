@@ -1,0 +1,10 @@
+Django==2.2.7
+PyMySQL==0.9.3
+jieba==0.39
+Whoosh==2.7.4
+django_recaptcha==2.0.5
+django_haystack==2.8.1
+djangorestframework==3.10.3
+django-simple-captcha==0.5.12
+
+
