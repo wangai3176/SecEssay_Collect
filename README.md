@@ -85,7 +85,7 @@ http://域名/sec-admin
 
 **整体效果：**
 
-![secessaycollect](E:\Programming_related\PythonCode\DjangoTest\SecEssay_Collect\secessaycollect.gif)
+![secessaycollect](https://github.com/shiyan-520/SecEssay_Collect/blob/master/secessaycollect.gif)
 
 
 
