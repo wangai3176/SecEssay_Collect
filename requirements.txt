@@ -1,4 +1,4 @@
-Django==2.2.7
+Django==2.2.28
 PyMySQL==0.9.3
 jieba==0.39
 Whoosh==2.7.4
